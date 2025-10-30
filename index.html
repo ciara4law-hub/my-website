@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ciara Lawrence — Résumé</title>
+  <style>
+    /* Simple, professional resume styles */
+    :root{
+      --accent:#0b66c3;
+      --muted:#666;
+      --bg:#f7f9fc;
+      --card:#fff;
+      --max-width:900px;
+      --gap:18px;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    body{
+      background:var(--bg);
+      margin:24px;
+      display:flex;
+      justify-content:center;
+      color:#111;
+    }
+    .resume {
+      width:100%;
+      max-width:var(--max-width);
+      background:var(--card);
+      padding:28px;
+      border-radius:10px;
+      box-shadow:0 6px 18px rgba(20,30,60,0.08);
+    }
+    header {
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      border-bottom:1px solid #e6eef8;
+      padding-bottom:14px;
+      margin-bottom:var(--gap);
+    }
+    .name {
+      font-size:1.6rem;
+      font-weight:700;
+      letter-spacing:0.2px;
+    }
+    .contact {
+      font-size:0.95rem;
+      color:var(--muted);
+      display:flex;
+      flex-wrap:wrap;
+      gap:12px 18px;
+      align-items:center;
+    }
+    .contact a { color:var(--accent); text-decoration:none; }
+    section { margin-bottom:var(--gap); }
+    h2 {
+      font-size:1rem;
+      text-transform:uppercase;
+      letter-spacing:1px;
+      margin:0 0 8px 0;
+      color:#16325c;
+    }
+    p.summary {
+      margin:0;
+      line-height:1.5;
+    }
+    .education, .experience, .leadership {
+      display:block;
+    }
+    .item {
+      margin-bottom:12px;
+    }
+    .item .title {
+      font-weight:600;
+      margin-right:8px;
+    }
+    .meta {
+      font-size:0.9rem;
+      color:var(--muted);
+    }
+    ul {
+      margin:8px 0 0 18px;
+      padding:0;
+    }
+    .skills {
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:8px;
+    }
+    .skill {
+      font-size:0.85rem;
+      padding:6px 10px;
+      border-radius:16px;
+      background:#f1f6ff;
+      color:#083a7a;
+    }
+
+    /* Responsive tweaks */
+    @media (min-width:800px){
+      header { flex-direction:row; justify-content:space-between; align-items:center; gap:24px; }
+      .contact { justify-content:flex-end; }
+    }
+  </style>
+</head>
+<body>
+  <article class="resume" role="article" aria-label="Ciara Lawrence resume">
+    <header>
+      <div>
+        <div class="name">Ciara Lawrence</div>
+      </div>
+
+      <div class="contact" aria-label="contact information">
+        <span><a href="mailto:ciara4law@gmail.com">ciara4law@gmail.com</a></span>
+        <span>•</span>
+        <span><a href="tel:+16198220032">(619) 822-0032</a></span>
+        <span>•</span>
+        <span>Washington, DC</span>
+        <span>•</span>
+        <span><a href="https://www.linkedin.com/in/ciara-lawrence-7152a1279/" target="_blank" rel="noopener">LinkedIn</a></span>
+        <span>•</span>
+        <span><a href="https://github.com/ciara4law-hub" target="_blank" rel="noopener">GitHub</a></span>
+      </div>
+    </header>
+
+    <section aria-label="professional summary">
+      <h2>Professional Summary</h2>
+      <p class="summary">
+        Motivated Howard University student with strong leadership, organization, and communication skills.
+        Experienced in volunteer service, cultural outreach, and managing student club activities. Seeking opportunities
+        to apply teamwork and problem-solving skills in academic and professional environments.
+      </p>
+    </section>
+
+    <section aria-label="education">
+      <h2>Education</h2>
+
+      <div class="education">
+        <div class="item">
+          <div>
+            <span class="title">Howard University — Washington, DC</span>
+            <span class="meta">Bachelor of Arts, Undeclared | Expected May 2029</span>
+          </div>
+          <ul>
+            <li>Relevant Coursework: Principles of Speech; Explorations in Computer Science; Intro to Computer Science;
+              Algebra I; Introduction to Contemporary Africa; Introductory Psychology</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div>
+            <span class="title">Morse High School — San Diego, CA</span>
+            <span class="meta">High School Diploma | Graduated May 2025</span>
+          </div>
+          <div class="meta">Honor roll (2023–2025)</div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="experience">
+      <h2>Experience</h2>
+
+      <div class="experience">
+        <div class="item">
+          <div>
+            <span class="title">Volunteer</span>
+            <span class="meta">Senior Shelter — San Diego, CA | 2024</span>
+          </div>
+          <ul>
+            <li>Helped serve meals to 50+ homeless seniors.</li>
+            <li>Socialized and provided companionship to residents.</li>
+            <li>Maintained cleanliness and supported shelter operations.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div>
+            <span class="title">Volunteer</span>
+            <span class="meta">Morse High School Interact Club — San Diego, CA | 2023–2025</span>
+          </div>
+          <ul>
+            <li>Participated in neighborhood clean-ups and school fundraising events.</li>
+            <li>Coordinated with local organizations to support charity events.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="leadership and activities">
+      <h2>Leadership & Activities</h2>
+
+      <div class="leadership">
+        <div class="item">
+          <div>
+            <span class="title">Morse High School Islander Student Association — San Diego, CA</span>
+            <span class="meta">2022–2024</span>
+          </div>
+          <ul>
+            <li>Led student groups through activities that taught islander culture.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div>
+            <span class="title">Outreach Coordinator, Interact — Morse High School</span>
+            <span class="meta">2024–2025</span>
+          </div>
+          <ul>
+            <li>Reached out to businesses to secure volunteer opportunities.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div>
+            <span class="title">Aaron Price Fellows Program — San Diego, CA</span>
+            <span class="meta">2022–2025</span>
+          </div>
+          <ul>
+            <li>Networked with students across San Diego County and explored career paths.</li>
+            <li>Developed leadership skills through community projects.</li>
+          </ul>
+        </div>
+
+        <div class="item">
+          <div>
+            <span class="title">Social Media Manager — Knitting Club & Fellowship of Christian Athletes</span>
+            <span class="meta">Morse High School | 2022–2024</span>
+          </div>
+          <ul>
+            <li>Managed social pages, designed engaging content, and edited photos/videos to increase visibility.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section aria-label="skills">
+      <h2>Skills</h2>
+      <div class="skills" role="list">
+        <span class="skill">Time Management</span>
+        <span class="skill">Organization</span>
+        <span class="skill">Public Speaking</span>
+        <span class="skill">Team Collaboration</span>
+        <span class="skill">Video & Photo Editing</span>
+        <span class="skill">Social Media Management</span>
+      </div>
+    </section>
+
+  </article>
+</body>
+</html>
